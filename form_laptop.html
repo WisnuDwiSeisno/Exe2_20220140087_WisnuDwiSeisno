@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM PEMESANAN</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h3>FORM PEMESANAN LAPTOP</h3>
+        </div>
+    <form action="">
+        <label for="nama">Nama Lengkap</label><br>
+        <input type="text" placeholder="Masukan Nama Anda" id="nama"><br><br>
+        <label for="nim">Username</label><br>
+        <input type="text" placeholder="Masukan NIM anda" id="nim"><br>
+        <p>Pilih Pembayaran:</p>
+
+        <input type="radio" name="peminatan" id="programming" value="COD">
+        <label for="programming">COD</label><br>
+        <input type="radio" name="peminatan" id="desain" value="Go-Pay">
+        <label for="programming">Go-Pay</label><br>
+        <input type="radio" name="peminatan" id="jaringan" value="ShopeePay">
+        <label for="programming">ShopeePay</label><br>
+        <label for="">Alamat</label><br>
+        <textarea name="alamat" id="alamat" placeholder="Masukan Alamat Anda" cols="30" rows="5"></textarea><br><br>
+        <label for="angkatan">Pilih Laptop</label>
+        <select id="angkatan" name="angkatan">
+            <option value="ASUS Vivobook S 15 (S5507)">ASUS Vivobook S 15 (S5507)</option>
+            <option value="ROG Zephyrus G14">ROG Zephyrus G14</option>
+            <option value="ASUS Vivobook S 14 OLED (S5406)">ASUS Vivobook S 14 OLED (S5406)</option>
+            <option value="ROG Zephyrus G16">ROG Zephyrus G16</option>
+            <option value="ASUS TUF Gaming A15">ASUS TUF Gaming A15</option>
+        </select>
+        <br><br>
+        <label for="date">Tanggal Pembelian</label>
+        <input type="date" id="tanggal" name="tanggal">
+        <br><br>
+
+        <button type="submit" onclick="kirimData()">Kirim</button>
+    </form>
+    </div>
+
+    <script src="sc_laptop.js"></script>
+</body>
+</html>

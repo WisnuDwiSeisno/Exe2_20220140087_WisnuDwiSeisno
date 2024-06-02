@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM PEMESANAN</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h3>FORM PEMESANAN AKSESORIS</h3>
+        </div>
+    <form action="">
+        <label for="nama">Nama Lengkap</label><br>
+        <input type="text" placeholder="Masukan Nama Anda" id="nama"><br><br>
+        <label for="nim">Username</label><br>
+        <input type="text" placeholder="Masukan NIM anda" id="nim"><br>
+        <p>Pilih Pembayaran:</p>
+
+        <input type="radio" name="peminatan" id="programming" value="COD">
+        <label for="programming">COD</label><br>
+        <input type="radio" name="peminatan" id="desain" value="Go-Pay">
+        <label for="programming">Go-Pay</label><br>
+        <input type="radio" name="peminatan" id="jaringan" value="ShopeePay">
+        <label for="programming">ShopeePay</label><br>
+        <label for="">Alamat</label><br>
+        <textarea name="alamat" id="alamat" placeholder="Masukan Alamat Anda" cols="30" rows="5"></textarea><br><br>
+        <label for="angkatan">Pilih Aksesoris</label>
+        <select id="angkatan" name="angkatan">
+            <option value="Rexus PRO Mouse Wireless Gaming Daxa Air IV Gen 2">Rexus PRO Mouse Wireless Gaming Daxa Air IV Gen 2</option>
+            <option value="Rexus Keyboard Gaming Mekanikal DAXA M82X Ultimate">Rexus Keyboard Gaming Mekanikal DAXA M82X Ultimate</option>
+            <option value="Rexus Headset Gaming Wireless Daxa TS1">Rexus Headset Gaming Wireless Daxa TS1</option>
+            <option value="Rexus Gaming Chair Kursi Daxa Elco Two DX-EC2 Max">Rexus Gaming Chair Kursi Daxa Elco Two DX-EC2 Max</option>
+            <option value="Rexus Gamepad Daxa Asteria AX1">Rexus Gamepad Daxa Asteria AX1</option>
+        </select>
+        <br><br>
+        <label for="date">Tanggal Pembelian</label>
+        <input type="date" id="tanggal" name="tanggal">
+        <br><br>
+
+        <button type="submit" onclick="kirimData()">Kirim</button>
+    </form>
+    </div>
+
+    <script src="sc_laptop.js"></script>
+</body>
+</html>
